@@ -1,7 +1,6 @@
 package com.corejava.java_lab2;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class ArrayToString {
     public static void main(String[] args) {
