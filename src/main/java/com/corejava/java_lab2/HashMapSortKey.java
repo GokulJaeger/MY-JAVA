@@ -5,8 +5,9 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
+import java.util.Map.Entry;
 
-public class HashMapSort {
+public class HashMapSortKey {
     public static void main(String[] args) {
 
         HashMap<Integer, String> hmap = new HashMap<Integer, String>();
@@ -22,20 +23,20 @@ public class HashMapSort {
         hmap.put(31, "Vijaya Lakshmi");
         hmap.put(20, "Shiny Felicita");
 
-        System.out.println("Before Sorting:");
-        Set<? extends Number> set = hmap.entrySet();
-        Iterator<> iterator = set.iterator();
+        System.out.println("Before sorting of Data:");
+        Set<?> set = hmap.entrySet();
+        Iterator<?> iterator = set.iterator();
         while (iterator.hasNext()) {
-            Map.Entry me = (Map.Entry) iterator.next();
+            Map.Entry<Integer, String> me = (Entry<Integer, String>) iterator.next();
             System.out.print(me.getKey() + ": ");
             System.out.println(me.getValue());
         }
         Map<Integer, String> map = new TreeMap<Integer, String>(hmap);
-        System.out.println("After Sorting:");
-        Set<? extends Number> set2 = map.entrySet();
-        Iterator<> iterator2 = set2.iterator();
+        System.out.println("After sorting by Key:");
+        Set<?> set2 = map.entrySet();
+        Iterator<?> iterator2 = set2.iterator();
         while (iterator2.hasNext()) {
-            Map.Entry me2 = (Map.Entry) iterator2.next();
+            Map.Entry<Integer, String> me2 = (Entry<Integer, String>) iterator2.next();
             System.out.print(me2.getKey() + ": ");
             System.out.println(me2.getValue());
         }
