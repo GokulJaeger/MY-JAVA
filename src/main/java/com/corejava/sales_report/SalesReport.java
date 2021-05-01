@@ -1,14 +1,13 @@
 package com.corejava.sales_report;
 
 import java.io.IOException;
-import java.text.DecimalFormat;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class SalesReport {
     static float sgst = (float) 0.06;
     static float cgst = (float) 0.06;
-    static DecimalFormat df2 = new DecimalFormat("#.##");
 
     public static void main(String[] args) throws IOException {
 
@@ -23,7 +22,8 @@ public class SalesReport {
         glist.add(new Goods("PA008", "Lion Dates", "Fruits", "250-g Pack", 1, -115));
 
         Scanner scan = new Scanner(System.in);
-        while (true) {
+        Boolean flag = true;
+        while (flag) {
             System.out.println("1: List Products 2: Get Bill 3: Exit");
             int num = scan.nextInt();
             switch (num) {
@@ -35,14 +35,15 @@ public class SalesReport {
                     break;
                 case 3:
                     System.out.println("Thank you");
-                    System.exit(0);
+                    break;
                 default:
                     System.out.println("Input no corresponding operation, please re-enter");
             }
         }
+        scan.close();
     }
 
-    public static void listProduct(ArrayList<Goods> gli) throws IOException {
+    public static void listProduct(List<Goods> gli) throws IOException {
         System.out.println("\t\t\t\tGoods List\t\t\t\t");
         System.out.println("Id\tName\t\tCategory\tDescription\tCount\tPrice");
         for (int i = 0; i < gli.size(); i++) {
@@ -52,7 +53,7 @@ public class SalesReport {
         }
     }
 
-    public static void getBill(ArrayList<Goods> gl) {
+    public static void getBill(List<Goods> gl) {
 
         System.out.println("\t\t\tEmart\t\t\t");
         System.out.println("\t\t123 Avenue, Crompet\t\t\n");
@@ -81,7 +82,7 @@ public class SalesReport {
         System.out.println("Grand Total:\t" + String.format("%.2f", gtot));
     }
 
-    public static void checkDetails(ArrayList<Goods> chlist) {
+    public static void checkDetails(List<Goods> chlist) {
 
         ArrayList<Goods> elist = new ArrayList<>();
         for (int i = chlist.size() - 1; i >= 0; i--) {

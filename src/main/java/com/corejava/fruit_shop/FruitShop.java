@@ -36,6 +36,7 @@ public class FruitShop {
 		
 		fd.add(new Fruits(fruitName, fruitType, fruitWeight, distributor, fruitcategory, location, expiryDate, quantity, cost,quantity*cost));
 	}
+	sc.close();
 	
 	FruitOperation fo=new FruitOperation();
 	fo.getDetails(fd);
