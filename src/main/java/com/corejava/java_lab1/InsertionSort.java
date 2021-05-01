@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class InsertionSort {
 	public static void Sort(int a[]) {
-		int n = a.length, i, j, p, temp;
+		int n = a.length, i, j, temp;
 		for (i = 1; i < n; i++) {
 
 			for (j = i - 1; j >= 0 && a[j + 1] < a[j]; j--) {

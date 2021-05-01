@@ -1,0 +1,406 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "com.corejava.App",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch AirVoice",
+            "request": "launch",
+            "mainClass": "com.corejava.air_voice.AirVoice",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch FruitShop",
+            "request": "launch",
+            "mainClass": "com.corejava.fruit_shop.FruitShop",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch GroceryMain",
+            "request": "launch",
+            "mainClass": "com.corejava.fruit_shop.GroceryMain",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch Add2Matrixs",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab1.Add2Matrixs",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArmstrongNumber",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab1.ArmstrongNumber",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayQuicksort",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab1.ArrayQuicksort",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch Bubblesort",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab1.Bubblesort",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch DupilicateString",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab1.DupilicateString",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch DuplicateArray",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab1.DuplicateArray",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch FactorialUsingRecursive",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab1.FactorialUsingRecursive",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch Factorialusingloop",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab1.Factorialusingloop",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch FirstNonRepeatable",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab1.FirstNonRepeatable",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch InsertionSort",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab1.InsertionSort",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch LengthOfLinkedList",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab1.LengthOfLinkedList",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch LinkedListSort",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab1.LinkedListSort",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch MiddleElement",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab1.MiddleElement",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrimeorNot",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab1.PrimeorNot",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch Quicksort",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab1.Quicksort",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch RemoveWhiteSpace",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab1.RemoveWhiteSpace",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReverseNumber",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab1.ReverseNumber",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReverseString",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab1.ReverseString",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch SecondLargest",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab1.SecondLargest",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch SquareRoot",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab1.SquareRoot",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringAnagram",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab1.StringAnagram",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringPremutation",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab1.StringPremutation",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringReverse",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab1.StringReverse",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch String_Palindrome",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab1.String_Palindrome",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch SwappingWith2variables",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab1.SwappingWith2variables",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch SwappingWith3Variables",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab1.SwappingWith3Variables",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayDescOrder",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab2.ArrayDescOrder",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayIntersection",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab2.ArrayIntersection",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayToString",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab2.ArrayToString",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch CountVowels",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab2.CountVowels",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch CountWords",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab2.CountWords",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch DataTypeValues",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab2.DataTypeValues",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch FileReadBuffer",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab2.FileReadBuffer",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch HashMapRemoveKey",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab2.HashMapRemoveKey",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch HashMapSortKey",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab2.HashMapSortKey",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch HashMapSortValue",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab2.HashMapSortValue",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch IntToString",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab2.IntToString",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch IterateHashSet",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab2.IterateHashSet",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch LinkedToArray",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab2.LinkedToArray",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaxInArray",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab2.MaxInArray",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch NumberToWord",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab2.NumberToWord",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch OccurrenceOfCharacter",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab2.OccurrenceOfCharacter",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReadFileIO",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab2.ReadFileIO",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch RemoveCharacter",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab2.RemoveCharacter",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReplaceWhiteSpace",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab2.ReplaceWhiteSpace",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReverseArray",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab2.ReverseArray",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringConcatenate",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab2.StringConcatenate",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringToArray",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab2.StringToArray",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThreadID",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab2.ThreadID",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch UniqueCharacters",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab2.UniqueCharacters",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch UppercaseLowercase",
+            "request": "launch",
+            "mainClass": "com.corejava.java_lab2.UppercaseLowercase",
+            "projectName": "my-java"
+        },
+        {
+            "type": "java",
+            "name": "Launch SalesReport",
+            "request": "launch",
+            "mainClass": "com.corejava.sales_report.SalesReport",
+            "projectName": "my-java"
+        }
+    ]
+}

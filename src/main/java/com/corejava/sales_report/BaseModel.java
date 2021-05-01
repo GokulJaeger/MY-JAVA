@@ -1,5 +1,5 @@
 package com.corejava.sales_report;
 
-public interface BaseModel {
+public class BaseModel {
     
 }
