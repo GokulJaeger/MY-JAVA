@@ -3,6 +3,7 @@ package com.corejava.air_voice;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class AirVoice {
 	public static void main(String[] args) {
@@ -74,29 +75,29 @@ public class AirVoice {
 
 	}
 
-	public static void searchCountry(ArrayList<Customer> cust) {
+	public static void searchCountry(List<Customer> cust) {
 		cust.stream()
 				.filter(c -> c.baseCountry.equals("Tanzania") && c.description.equals("Postpaid") && c.vas.equals("no"))
 				.collect(Collectors.toSet()).forEach(System.out::println);
 	}
 
-	public static void searchCountryCon(ArrayList<Customer> cust) {
+	public static void searchCountryCon(List<Customer> cust) {
 		cust.stream().filter(
 				c -> c.baseCountry.equals("South Africa") && c.description.equals("Prepaid") && c.isActive == true)
 				.map(c -> c).forEach(System.out::println);
 	}
 
-	public static void sortBaseNumber(ArrayList<Customer> cust) {
+	public static void sortBaseNumber(List<Customer> cust) {
 		cust.stream().filter(c -> c.baseCountry.equals("Uganda") && c.phoneNumber.startsWith(c.phoneNumber, 61)
 				&& c.is4g.equals("yes")).map(c -> c).forEach(System.out::println);
 	}
 
-	public static void searchCustNameAndPhoneNumber(ArrayList<Customer> cust, String custName, String phonenumber) {
+	public static void searchCustNameAndPhoneNumber(List<Customer> cust, String custName, String phonenumber) {
 		cust.stream().filter(c -> c.customerName.equals(custName) && c.phoneNumber.equals(phonenumber)).map(c -> c)
 				.forEach(System.out::println);
 	}
 
-	public void printCustomerId(ArrayList<Customer> cust, String custid) {
+	public void printCustomerId(List<Customer> cust, String custid) {
 		List<Customer> l = cust.stream().filter(c -> c.customerId.equals(custid)).collect(Collectors.toList());
 		if (l.isEmpty()) {
 			System.out.println("No Record Found");
@@ -106,7 +107,7 @@ public class AirVoice {
 
 	}
 
-	public static void sortBaseNumber(ArrayList<Customer> cust) {
+	public static void sortBaseNumber(List<Customer> cust) {
 		cust.stream().filter(c -> c.baseCountry.equals("Nigeria") && c.phoneNumber.startsWith(c.phoneNumber, 56))
 				.map(c -> c.customerName.toUpperCase()).forEach(System.out::println);
 	}
