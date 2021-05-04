@@ -26,21 +26,22 @@ public class InsertionSort {
 	}
 
 	public static void main(String[] args) {
-		int n, i;
+		int n;
 		Scanner s = new Scanner(System.in);
 		System.out.print("Enter number of elements in the array:");
 		n = s.nextInt();
 		int a[] = new int[n];
 		System.out.println("Enter " + n + " elements ");
-		for (i = 0; i < n; i++) {
+		for (int i = 0; i < n; i++) {
 			a[i] = s.nextInt();
 		}
-		s.close();
 		System.out.println("elements in array ");
 		printarray(a);
 		Sort(a);
 		System.out.println("\nelements after sorting");
 		printarray(a);
+
+		s.close();
 
 	}
 

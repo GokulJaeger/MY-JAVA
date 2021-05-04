@@ -3,28 +3,30 @@ package com.corejava.java_lab1;
 import java.util.Scanner;
 
 public class ArrayQuicksort {
-	
+
 	public static void main(String[] args) {
-		
-		
-		int n, i;
+
 		Scanner sc = new Scanner(System.in);
 		
+		int n;
 		System.out.print("Enter number of elements in the array:");
 		n = sc.nextInt();
 		int a[] = new int[n];
 		System.out.println("Enter " + n + " elements ");
-		for (i = 0; i < n; i++) {
+		for (int i = 0; i < n; i++) {
 			a[i] = sc.nextInt();
 		}
-		sc.close();
 		System.out.println("elements in array ");
 		printarray(a);
 		Sort(a, 0, n - 1);
 		System.out.println("\nelements after sorting");
 		printarray(a);
+		
+		
+		sc.close();
 
 	}
+
 	public static int partition(int a[], int l, int h) {
 		int i = l + 1, j = h, c = l, temp;
 
