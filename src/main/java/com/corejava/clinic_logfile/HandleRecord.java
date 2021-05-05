@@ -2,19 +2,14 @@ package com.corejava.clinic_logfile;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class HandleRecord {
     public static void main(String[] args) {
-
-        loadData();
-
-        Scanner sc = new Scanner(System.in);
-    }
-
-    public static void loadData(){
         Date dt = new Date();
-        
+
         ArrayList<Clinic> clist = new ArrayList<>();
         clist.add(new Clinic(dt, "IND", "General", 5, "INDG"));
         clist.add(new Clinic(dt, "UK", "Private", 3, "UKP"));
@@ -27,7 +22,39 @@ public class HandleRecord {
         rlist.add(new Records("UKP1", "JHVGHVBK35168", 5.21, 8.21, 6.54, 1.02, 5.21, 6.32, 30));
         rlist.add(new Records("UKP2", "OIYYJBMV51351", 3.21, 9.21, 7.54, 6.02, 7.21, 4.32, 56));
         rlist.add(new Records("UKP3", "QGFDCJYFJ1532", 4.21, 8.42, 1.54, 1.45, 3.21, 9.32, 24));
+
+        Scanner sc = new Scanner(System.in);
+        getClinic(clist);
+        System.out.println("1.GetClinic Records 2.Check Records 3.Exit");
+        int i = sc.nextInt();
+        switch (i) {
+            case 1:
+                System.out.println("Enter clinic Seq.Number: ");
+                String seq = sc.nextLine();
+                getClinicRecords(rlist, seq);
+                System.out.println(seq);
+                break;
+            case 2:
+                break;
+            case 3:
+                System.out.close();
+                break;
+            default:
+                System.out.println("Invalid Option!");
+        }
     }
 
+    public static void getClinic(List<Clinic> clilist) {
+        for (int i = 0; i < clilist.size(); i++) {
+            Clinic c = clilist.get(i);
+            System.out.println(c);
+        }
+    }
+
+    public static void getClinicRecords(List<Records> reclist, String sno) {
+        reclist.stream().filter(r -> r.getId().startsWith(sno)).collect(Collectors.toList())
+                .forEach(System.out::println);
+        ;
+    }
 
 }
