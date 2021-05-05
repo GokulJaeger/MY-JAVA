@@ -1,6 +1,6 @@
 package com.corejava.air_voice;
 
-public class Network extends NetType {
+public class Phone extends PhoneType {
 	public String phoneNumber;
 
 	public String avlCredits;
@@ -9,7 +9,7 @@ public class Network extends NetType {
 	
 	public Integer billAmount;
 
-	public Network(String vas, boolean isActive, String description, String phoneNumber, String avlCredits, String is4g,
+	public Phone(String vas, boolean isActive, String description, String phoneNumber, String avlCredits, String is4g,
 			Integer billAmount) {
 		super(vas, isActive, description);
 		this.phoneNumber = phoneNumber;

@@ -1,9 +1,9 @@
 package com.corejava.air_voice;
 
-public class Vas extends Basemodel{
-	public String vas;
+public class Vas implements Basemodel {
+	protected String vas;
 
-	public boolean isActive;
+	protected boolean isActive;
 
 	public Vas(String vas, boolean isActive) {
 		super();
@@ -26,4 +26,6 @@ public class Vas extends Basemodel{
 	public void setActive(boolean isActive) {
 		this.isActive = isActive;
 	}
+
+
 }
