@@ -37,7 +37,7 @@ public class SalesReport {
                     System.out.println("Thank you");
                     break;
                 default:
-                    System.out.println("Input no corresponding operation, please re-enter");
+                    System.out.println("Invalid Option");
             }
         }
         scan.close();
