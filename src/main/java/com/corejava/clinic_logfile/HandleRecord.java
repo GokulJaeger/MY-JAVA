@@ -23,9 +23,9 @@ public class HandleRecord {
 
         rlist.add(new Records("INDG1", "INGSTRDVBC021579", 5.24, 9.25, 84.21, 4.21, 6.35, 5.21, 20));
         rlist.add(new Records("INDG2", "JKGBGIUD35468152", 8.24, 5.25, 58.21, 3.21, 3.35, 6.51, 65));
-        rlist.add(new Records("INDG3", "EVKIIOHN53168138", 6.24, 4.25, 97.21, 4.83, 9.37, 8.23, 45));
+        rlist.add(new Records("INDG3", "EVKIIOHN53168138", 6.24, 4.25, 0, 4.83, 9.37, 8.23, 45));
         rlist.add(new Records("INDG4", "UYGUHBTDGJ351687", 3.24, 7.25, 32.21, 5.45, 2.45, 3.78, 18));
-        rlist.add(new Records("INDG5", "RJNTDVTD61764684", 2.24, 3.25, 14.21, 1.91, 7.33, 7.91, 38));
+        rlist.add(new Records("INDG5", "RJNTDVTD61764684", 2.24, 3.25, 14.21, 1.91, 0, 7.91, 38));
 
         // clist.add(new Clinic(dt, "UK", "Private", 3, "UKP"));
         // rlist.add(new Records("UKP1", "JHVGHVBK35168", 5.21, 8.21, 6.54, 1.02, 5.21,
@@ -112,18 +112,31 @@ public class HandleRecord {
                 count += 1;
             }
         }
+        List<Records> nrlist = new ArrayList<>();
+        List<Records> drlist = new ArrayList<>();
+
         if (rno == count) {
             for (int k = 0; k < relist.size(); k++) {
                 Records r1 = relist.get(k);
                 if (r1.getChl() > 0 && r1.getAge() > 0 && r1.getLcd() > 0 && r1.getLipid() > 0 && r1.getOpd() > 0
                         && r1.getPcs() > 0 && r1.getRef() != null && r1.getSgt() > 0) {
                     System.out.println("Checked");
+                    nrlist.add(r1);
                 } else {
                     System.out.println("Record Incomplete!");
+                    drlist.add(r1);
                 }
             }
         }
-        System.out.println("Whant to convert to CSV: (y/n)");
+        for (int m = 0; m < nrlist.size(); m++) {
+            Records nr = nrlist.get(m);
+            System.out.println(nr);
+        }
+        for (int n = 0; n < drlist.size(); n++) {
+            Records dr = drlist.get(n);
+            System.out.println(dr);
+        }
+        System.out.println("Want to convert checked record to CSV: (y/n)");
         String ch = se.next();
         if (ch.equalsIgnoreCase("y")) {
             CSVWriter writer = new CSVWriter(new FileWriter("Clinic.csv"));
@@ -134,12 +147,12 @@ public class HandleRecord {
                 writer.writeNext(str);
                 writer.flush();
             }
-            for (int j = 0; j < relist.size(); j++) {
-                Records r = relist.get(j);
+            for (int j = 0; j < nrlist.size(); j++) {
+                Records r = nrlist.get(j);
                 String[] str2 = { r.getId(), r.getRef(), String.valueOf(r.getAge()), String.valueOf(r.getChl()),
                         String.valueOf(r.getLcd()), String.valueOf(r.getLipid()), String.valueOf(r.getOpd()),
                         String.valueOf(r.getPcs()), String.valueOf(r.getSgt()) };
-                writer.writeNext(str2); 
+                writer.writeNext(str2);
                 writer.flush();
             }
         }
