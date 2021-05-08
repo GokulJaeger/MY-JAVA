@@ -27,6 +27,7 @@ public class HandleRecord {
         rlist.add(new Records("INDG4", "UYGUHBTDGJ351687", 3.24, 7.25, 32.21, 5.45, 2.45, 3.78, 18));
         rlist.add(new Records("INDG5", "RJNTDVTD61764684", 2.24, 3.25, 14.21, 1.91, 0, 7.91, 38));
 
+        
         // clist.add(new Clinic(dt, "UK", "Private", 3, "UKP"));
         // rlist.add(new Records("UKP1", "JHVGHVBK35168", 5.21, 8.21, 6.54, 1.02, 5.21,
         // 6.32, 30));
@@ -34,6 +35,7 @@ public class HandleRecord {
         // 4.32, 56));
         // rlist.add(new Records("UKP3", "QGFDCJYFJ1532", 4.21, 8.42, 1.54, 1.45, 3.21,
         // 9.32, 24));
+        
 
         Scanner sc = new Scanner(System.in);
         getClinic(clist, rlist);
@@ -128,10 +130,15 @@ public class HandleRecord {
                 }
             }
         }
+        else{
+            System.out.println("Records do not match the total count!");
+        }
+        System.out.println("Correct List");
         for (int m = 0; m < nrlist.size(); m++) {
             Records nr = nrlist.get(m);
             System.out.println(nr);
         }
+        System.out.println("Incorrect List");
         for (int n = 0; n < drlist.size(); n++) {
             Records dr = drlist.get(n);
             System.out.println(dr);
