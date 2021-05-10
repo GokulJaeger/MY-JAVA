@@ -1,24 +1,23 @@
 package com.corejava.clinic_logfile;
 
-import java.util.Date;
 
 public class Clinic implements BaseClass {
-    private Date date;
+    private String date;
     private String region;
     private String ctype;
     private int norec;
     private String seq;
-    public Clinic(Date date, String region, String ctype, int norec, String seq) {
+    public Clinic(String date, String region, String ctype, int norec, String seq) {
         this.date = date;
         this.region = region;
         this.ctype = ctype;
         this.norec = norec;
         this.seq = seq;
     }
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
     public String getRegion() {
