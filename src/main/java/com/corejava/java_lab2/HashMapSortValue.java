@@ -35,7 +35,6 @@ public class HashMapSortValue {
             System.out.print(me.getKey() + ": ");
             System.out.println(me.getValue());
         }
-        
         for (Map.Entry<Integer, String> entry : hMap.entrySet()) {
             list.add(entry.getValue());
         }

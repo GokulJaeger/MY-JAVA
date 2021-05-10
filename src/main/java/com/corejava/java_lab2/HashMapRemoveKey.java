@@ -11,7 +11,7 @@ public class HashMapRemoveKey {
     public static void main(String[] args) {
 
         Scanner sd = new Scanner(System.in);
-        HashMap<Integer, String> hmaP = new HashMap<Integer, String>();
+        HashMap<Integer, String> hmaP = new HashMap<>();
         hmaP.put(5, "Gokul");
         hmaP.put(11, "Latha");
         hmaP.put(7, "Srinath");
