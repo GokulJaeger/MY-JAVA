@@ -1,72 +1,84 @@
 package com.corejava.car_manu;
 
-import java.util.Date;
-
 public class CarContent implements BaseModel {
-    public String Catg ;	
-	public String SKU ;
-	public Date Dom;
-	public String ISFragile ;	
-	public String Mono;
-	public String Colr;
-	public Float CostStep;
-    public CarContent(String catg, String sKU, Date dom, String iSFragile, String mono, String colr, Float costStep) {
-        super();
-        Catg = catg;
-        SKU = sKU;
-        Dom = dom;
-        ISFragile = iSFragile;
-        Mono = mono;
-        Colr = colr;
-        CostStep = costStep;
+    private String catg;
+    private String sku;
+    private String dom;
+    private String isfragile;
+    private String mono;
+    private String colr;
+    private Float costStep;
+
+    public CarContent(String catg, String sku, String dom, String isfragile, String mono, String colr, Float costStep) {
+        this.catg = catg;
+        this.sku = sku;
+        this.dom = dom;
+        this.isfragile = isfragile;
+        this.mono = mono;
+        this.colr = colr;
+        this.costStep = costStep;
     }
+
     public String getCatg() {
-        return Catg;
+        return catg;
     }
+
     public void setCatg(String catg) {
-        Catg = catg;
+        this.catg = catg;
     }
-    public String getSKU() {
-        return SKU;
+
+    public String getSku() {
+        return sku;
     }
-    public void setSKU(String sKU) {
-        SKU = sKU;
+
+    public void setSku(String sku) {
+        this.sku = sku;
     }
-    public Date getDom() {
-        return Dom;
+
+    public String getDom() {
+        return dom;
     }
-    public void setDom(Date dom) {
-        Dom = dom;
+
+    public void setDom(String dom) {
+        this.dom = dom;
     }
-    public String getISFragile() {
-        return ISFragile;
+
+    public String getIsfragile() {
+        return isfragile;
     }
-    public void setISFragile(String iSFragile) {
-        ISFragile = iSFragile;
+
+    public void setIsfragile(String isfragile) {
+        this.isfragile = isfragile;
     }
+
     public String getMono() {
-        return Mono;
+        return mono;
     }
+
     public void setMono(String mono) {
-        Mono = mono;
+        this.mono = mono;
     }
+
     public String getColr() {
-        return Colr;
+        return colr;
     }
+
     public void setColr(String colr) {
-        Colr = colr;
+        this.colr = colr;
     }
+
     public Float getCostStep() {
-        return CostStep;
+        return costStep;
     }
+
     public void setCostStep(Float costStep) {
-        CostStep = costStep;
+        this.costStep = costStep;
     }
+
     @Override
     public String toString() {
-        return "CarContent [Catg=" + Catg + ", Colr=" + Colr + ", CostStep=" + CostStep + ", Dom=" + Dom
-                + ", ISFragile=" + ISFragile + ", Mono=" + Mono + ", SKU=" + SKU + "]";
+        return "CarContent [catg=" + catg + ", colr=" + colr + ", costStep=" + costStep + ", dom=" + dom
+                + ", isfragile=" + isfragile + ", mono=" + mono + ", sku=" + sku + "]";
     }
-
     
 }

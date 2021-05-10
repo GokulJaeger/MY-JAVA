@@ -3,13 +3,12 @@ package com.corejava.car_manu;
 import java.util.Date;
 
 public class CarHeader implements BaseModel {
-    public Date date ;
-	public String mName;	
-	public int nor;	
-	public String fiSeq;	
-	public int 	tot;
+    private Date date ;
+	private String mName;	
+	private int nor;	
+	private String fiSeq;	
+	private int 	tot;
     public CarHeader(Date date, String mName, int nor, String fiSeq, int tot) {
-        super();
         this.date = date;
         this.mName = mName;
         this.nor = nor;
