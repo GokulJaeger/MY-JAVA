@@ -40,7 +40,7 @@ public final class Services {
             for (int k = 0; k < relist.size(); k++) {
                 Records r1 = relist.get(k);
                 if (r1.values[5] > 0 && r1.getAge() > 0 && r1.values[1] > 0 && r1.values[0] > 0 && r1.values[3] > 0
-                        && r1.values[2] > 0 && r1.getRef() != null && r1.values[4] > 0 && checkAgeVale(r1.values[3],r1.getAge())==1 && checkLcdPcs(r1.values[1],r1.values[2])==1) {
+                        && r1.values[2] > 0 && r1.getRef() != null && r1.values[4] > 0 && checkAgeVale(r1.values[3],r1.getAge())==10 && checkLcdPcs(r1.values[1],r1.values[2])==1) {
                             System.out.println(r1.getRef() + ": Checked");
                             nrlist.add(r1);
                     }else {
@@ -74,14 +74,14 @@ public final class Services {
 
     public static int checkAgeVale(double a, double b) {
         if(a>5.0 && b<45 ){
-            return 1;
+            return 10;
         }else{
         return 0;
         }
     }
 
     public static int checkLcdPcs(double x, double y) {
-        if(x>5.0 && y<45 ){
+        if(x<10.0 && y<10.0 ){
             return 1;
         }else{
         return 0;
