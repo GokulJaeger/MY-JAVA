@@ -72,11 +72,11 @@ public final class Services {
     }se.close();
     }
 
-    public static boolean checkAgeVale(double a, double b) {
+    public static int checkAgeVale(double a, double b) {
         if(a>5.0 && b<45 ){
-            return true;
+            return 1;
         }else{
-        return false;
+        return 0;
         }
     }
 
