@@ -1,24 +1,23 @@
 package com.corejava.car_manu;
 
-import java.util.Date;
 
 public class CarHeader implements BaseModel {
-    private Date date ;
+    private String date ;
 	private String mName;	
 	private int nor;	
 	private String fiSeq;	
 	private int 	tot;
-    public CarHeader(Date date, String mName, int nor, String fiSeq, int tot) {
+    public CarHeader(String date, String mName, int nor, String fiSeq, int tot) {
         this.date = date;
         this.mName = mName;
         this.nor = nor;
         this.fiSeq = fiSeq;
         this.tot = tot;
     }
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
     public String getmName() {

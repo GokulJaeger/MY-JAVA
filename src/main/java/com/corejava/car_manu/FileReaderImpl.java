@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -38,9 +39,9 @@ public class FileReaderImpl extends Filereader {
     public static List<String> readFileIntoList() {
         BufferedReader br;
         ArrayList<String> listOfLines = new ArrayList<>();
-        try {
-            File file = new File("carfile.txt");
-            FileReader reader = new FileReader(file);
+        Path file = Paths.get("carfile.txt");
+        try(BufferedReader reader = Files.newBufferedReader(file, StandardCharsets.UTF_8)) {
+            
             txt = file.getName();
             if (valiFile(txt) != false) {
                 br = new BufferedReader(reader);
@@ -82,7 +83,7 @@ public class FileReaderImpl extends Filereader {
                     + hd.getNor() + "****" + hd.getTot() + "****" + System.lineSeparator());
         }
         for (CarContent cn : c) {
-            writer.write(i + "****" + cn.getMono() + "****" + cn.getSKU() + "****" + cn.getISFragile() + "****"
+            writer.write(i + "****" + cn.getMono() + "****" + cn.getSku() + "****" + cn.getIsfragile() + "****"
                     + cn.getColr() + "****" + cn.getCostStep() + "****" + System.lineSeparator());
         }
         writer.close();
