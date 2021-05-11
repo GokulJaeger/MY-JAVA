@@ -1,22 +1,22 @@
 package com.corejava.air_voice;
 
 public class Vas implements Basemodel {
-	protected String vas;
+	protected String vass;
 
 	protected boolean isActive;
 
 	public Vas(String vas, boolean isActive) {
 		super();
-		this.vas = vas;
+		this.vass = vas;
 		this.isActive = isActive;
 	}
 
 	public String getVas() {
-		return vas;
+		return vass;
 	}
 
 	public void setVas(String vas) {
-		this.vas = vas;
+		this.vass = vas;
 	}
 
 	public boolean isActive() {

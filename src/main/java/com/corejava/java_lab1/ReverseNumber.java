@@ -3,7 +3,7 @@ package com.corejava.java_lab1;
 import java.util.Scanner;
 
 public class ReverseNumber {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		int num = 0;
 		int reversenum = 0;
 		System.out.println("Enter your number: ");
@@ -12,7 +12,7 @@ public class ReverseNumber {
 
 		num = in.nextInt();
 		in.close();
-		for (; num != 0;) {
+		while(num != 0) {
 			reversenum = reversenum * 10;
 			reversenum = reversenum + num % 10;
 			num = num / 10;

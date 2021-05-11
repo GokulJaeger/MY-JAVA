@@ -20,8 +20,8 @@ public class FileReaderImpl extends Filereader {
     static String txt = "";
 
     static void createFile() {
-        try {
-            File myObj = new File("carfile.txt");
+        try(File myObj = new File("carfile.txt")) {
+            
             if (myObj.createNewFile()) {
                 System.out.println("File created: " + myObj.getName());
                 new Utility().addData();
@@ -75,7 +75,7 @@ public class FileReaderImpl extends Filereader {
 
     public void writeFile(List<CarHeader> h, List<CarContent> c) throws IOException {
 
-        FileWriter writer = new FileWriter("carfile.txt");
+        try(FileWriter writer = new FileWriter("carfile.txt")){
         int i = 0;
         for (CarHeader hd : h) {
 
@@ -86,7 +86,9 @@ public class FileReaderImpl extends Filereader {
             writer.write(i + "****" + cn.getMono() + "****" + cn.getSku() + "****" + cn.getIsfragile() + "****"
                     + cn.getColr() + "****" + cn.getCostStep() + "****" + System.lineSeparator());
         }
-        writer.close();
+    }catch(Exception e){
+        System.out.println("Error!:" + e);
+    }
     }
 
     public static void display() throws IOException {

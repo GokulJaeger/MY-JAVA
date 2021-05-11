@@ -9,7 +9,7 @@ public class RemoveWhiteSpace {
 		System.out.println("Enter the line:");
 		line = sc.nextLine();
 
-		System.out.println(line.replaceAll(" ", ""));
+		System.out.println(line.replace(" ", ""));
 		sc.close();
 	}
 

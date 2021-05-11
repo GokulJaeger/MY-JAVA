@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 public class MiddleElement {
 	public static void main(String[] args) {
-		LinkedList<Integer> ll = new LinkedList<Integer>();
+		LinkedList<Integer> ll = new LinkedList<>();
 		ll.add(2);
 		ll.addFirst(3);
 		ll.addLast(5);

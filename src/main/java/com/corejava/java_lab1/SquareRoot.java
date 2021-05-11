@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class SquareRoot {
 	public static double squareRoot(int number) {
 		double temp;
-		double sr = number / 2;
+		double sr = (double)number / 2;
 
 		do {
 			temp = sr;

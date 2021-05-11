@@ -3,8 +3,11 @@ package com.corejava.java_lab1;
 import java.util.Scanner;
 
 public class InsertionSort {
-	public static void Sort(int a[]) {
-		int n = a.length, i, j, temp;
+	public static void sort(int[] a) {
+		int n = a.length;
+		int i;
+		int j;
+		int temp;
 		for (i = 1; i < n; i++) {
 
 			for (j = i - 1; j >= 0 && a[j + 1] < a[j]; j--) {
@@ -37,7 +40,7 @@ public class InsertionSort {
 		}
 		System.out.println("elements in array ");
 		printarray(a);
-		Sort(a);
+		sort(a);
 		System.out.println("\nelements after sorting");
 		printarray(a);
 

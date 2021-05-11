@@ -5,7 +5,10 @@ import java.util.Scanner;
 public class ArmstrongNumber {
 	public static void main(String[] args) {
 
-		int number, originalNumber, remainder, result = 0;
+		int number;
+		int originalNumber;
+		int remainder;
+		int result = 0;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter a Number :");
 		number = sc.nextInt();

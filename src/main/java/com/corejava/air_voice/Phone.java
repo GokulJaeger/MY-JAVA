@@ -1,13 +1,13 @@
 package com.corejava.air_voice;
 
 public class Phone extends PhoneType {
-	public String phoneNumber;
+	protected String phoneNumber;
 
-	public String avlCredits;
+	protected String avlCredits;
 
-	public String is4g;
+	protected String is4g;
 	
-	public Integer billAmount;
+	protected Integer billAmount;
 
 	public Phone(String vas, boolean isActive, String description, String phoneNumber, String avlCredits, String is4g,
 			Integer billAmount) {

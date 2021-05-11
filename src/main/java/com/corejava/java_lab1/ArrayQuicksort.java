@@ -7,7 +7,7 @@ public class ArrayQuicksort {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		
+
 		int n;
 		System.out.print("Enter number of elements in the array:");
 		n = sc.nextInt();
@@ -18,19 +18,21 @@ public class ArrayQuicksort {
 		}
 		System.out.println("elements in array ");
 		printarray(a);
-		Sort(a, 0, n - 1);
+		sort(a, 0, n - 1);
 		System.out.println("\nelements after sorting");
 		printarray(a);
-		
-		
+
 		sc.close();
 
 	}
 
-	public static int partition(int a[], int l, int h) {
-		int i = l + 1, j = h, c = l, temp;
+	public static int partition(int[] a, int l, int h) {
+		int i = l + 1;
+		int j = h;
+		int c = l;
+		int temp;
 
-		for (; i <= j;) {
+		while(i<=j) {
 
 			while (i <= h && a[i] < a[c])
 				i++;
@@ -51,11 +53,11 @@ public class ArrayQuicksort {
 		return j;
 	}
 
-	public static void Sort(int a[], int l, int h) {
+	public static void sort(int a[], int l, int h) {
 		if (l < h) {
 			int m = partition(a, l, h);
-			Sort(a, l, m - 1);
-			Sort(a, m + 1, h);
+			sort(a, l, m - 1);
+			sort(a, m + 1, h);
 
 		}
 

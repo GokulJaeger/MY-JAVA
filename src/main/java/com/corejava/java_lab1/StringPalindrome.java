@@ -2,7 +2,7 @@ package com.corejava.java_lab1;
 
 import java.util.Scanner;
 
-public class String_Palindrome {
+public class StringPalindrome {
 
 	public static void main(String[] args) {
 
@@ -18,7 +18,7 @@ public class String_Palindrome {
 		scn.close();
 
 		while (i >= 0) {
-			revStr = revStr + str.charAt(i);
+			revStr +=  str.charAt(i);
 			i--;
 		}
 		if (str.equals(revStr)) {

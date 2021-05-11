@@ -3,8 +3,11 @@ package com.corejava.java_lab1;
 import java.util.Scanner;
 
 public class Bubblesort {
-	public static void Sort(int a[]) {
-		int n = a.length, i, j, temp;
+	public static void sort(int[] a) {
+		int n = a.length;
+		int i;
+		int j;
+		int temp;
 		for (i = 0; i < n - 1; i++) {
 
 			for (j = 0; j < n - i - 1; j++) {
@@ -39,7 +42,7 @@ public class Bubblesort {
 		}
 		System.out.println("elements in array ");
 		printarray(a);
-		Sort(a);
+		sort(a);
 		System.out.println("\nelements after sorting");
 		printarray(a);
 

@@ -11,15 +11,15 @@ public class PrimeorNot {
 		num = sc.nextInt();
 
 		boolean isprime = false;
-		for (int i = 2; i <= num / 2; ++i) {
+		for (int i = 2; i <= num; ++i) {
 
-			if (num % i == 0) {
-				isprime = false;
+			if (num % i!= 0) {
+				isprime = true;
 				break;
 			}
 		}
 
-		if (!isprime)
+		if (isprime)
 			System.out.println("Given Number " + num + " is a  prime number.");
 		else {
 			System.out.println("Given Number " + num + " is not a prime number.");

@@ -4,7 +4,10 @@ import java.util.Scanner;
 
 public class Add2Matrixs {
 	public static void main(String args[]) {
-		int m, n, c, d;
+		int m;
+		int n;
+		int c;
+		int d;
 		Scanner in = new Scanner(System.in);
 
 		System.out.println("Enter the number of rows and columns of matrix");

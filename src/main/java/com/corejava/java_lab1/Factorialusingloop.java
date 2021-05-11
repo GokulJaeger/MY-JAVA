@@ -4,9 +4,10 @@ import java.util.Scanner;
 
 public class Factorialusingloop {
     public static void main(String[] args) {
-        int num;
-        System.out.printf("Enter the Number:");
+
         Scanner sc = new Scanner(System.in);
+        int num;
+        System.out.println("Enter number:");
         num = sc.nextInt();
         sc.close();
         int factorial = 1;
@@ -14,7 +15,7 @@ public class Factorialusingloop {
 
             factorial *= i;
         }
-        System.out.printf("Factorial of" + "  " + num + " = " + factorial);
+        System.out.format("Factorial of %d = %d ",num, factorial);
     }
 
 }

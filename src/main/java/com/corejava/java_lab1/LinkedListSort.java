@@ -5,7 +5,7 @@ import java.util.LinkedList;
 
 public class LinkedListSort {
     public static void main(String[] args) {
-        LinkedList<String> listOfNames = new LinkedList<String>();
+        LinkedList<String> listOfNames = new LinkedList<>();
 
         listOfNames.add("D");
         listOfNames.add("A");
