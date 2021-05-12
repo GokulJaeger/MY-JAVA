@@ -13,7 +13,7 @@ public class GroceryMain {
 		getDetails(fd);
 		findByDis(fd, "Venki");
 		sortDistGroceryType(fd);
-		SortCostExpiry(fd);
+		sortCostExpiry(fd);
 
 	}
 
@@ -29,7 +29,7 @@ public class GroceryMain {
 		for (int i = 0; i < fd.size(); i++) {
 			System.out.println(fd.get(i));
 		}
-		System.out.println("========================================================================================");
+		System.out.println("======================================================================================");
 	}
 
 	static void sortDistGroceryType(List<Grocery> fd) {
@@ -38,11 +38,11 @@ public class GroceryMain {
 		for (int i = 0; i < fd.size(); i++) {
 			System.out.println(fd.get(i));
 		}
-		System.out.println("========================================================================================");
+		System.out.println("================================================================================");
 
 	}
 
-	static void SortCostExpiry(List<Grocery> fd) {
+	static void sortCostExpiry(List<Grocery> fd) {
 		Collections.sort(fd, new SortCostExpiry());
 		System.out.println("Grocery Deatils:\n");
 		for (int i = 0; i < fd.size(); i++) {

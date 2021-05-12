@@ -1,6 +1,6 @@
 package com.corejava.fruit_shop;
 
-public class Fruits extends Basemodel {
+public class Fruits implements Basemodel {
 	private String fname;
 	private String ftype;
 	private String dis;

@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class FileReaderImpl extends Filereader {
+public class FileReaderImpl extends FileReader {
     static String txt = "";
 
     static void createFile() {

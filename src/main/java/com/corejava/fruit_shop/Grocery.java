@@ -1,6 +1,6 @@
 package com.corejava.fruit_shop;
 
-public class Grocery extends Basemodel  {
+public class Grocery implements Basemodel  {
 	String gname;
 	String gtype;
 	String distributor;

@@ -9,7 +9,7 @@ public class LinkedToArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        LinkedList<String> llist = new LinkedList<String>();
+        LinkedList<String> llist = new LinkedList<>();
 
         llist.add("Gokul");
         llist.add("Rikhitha");
@@ -20,7 +20,7 @@ public class LinkedToArray {
         llist.add("Lokesh");
         System.out.println("The Linked List:" + llist);
 
-        List<String> alist = new ArrayList<String>(llist);
+        List<String> alist = new ArrayList<>(llist);
         System.out.println("The Array List: ");
         for(Object i:alist){
             System.out.println(i);

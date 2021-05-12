@@ -10,15 +10,16 @@ public class StringPalindrome {
 
 		System.out.print("Enter a string: ");
 		String str = scn.nextLine();
-		String revStr = "";
+		
 		int i;
 		int strLen = str.length();
 		i = strLen - 1;
+		String[] revStr = new String[i];
 
 		scn.close();
 
 		while (i >= 0) {
-			revStr +=  str.charAt(i);
+			revStr[i]=String.valueOf(str.charAt(i));
 			i--;
 		}
 		if (str.equals(revStr)) {

@@ -1,6 +1,6 @@
 package com.corejava.sales_report;
 
-public class Goods extends BaseModel{
+public class Goods implements BaseModel{
     
     public Goods(String id, String name, String category, String description, int count, float price) {
         this.id = id;

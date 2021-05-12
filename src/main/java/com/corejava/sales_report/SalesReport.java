@@ -22,8 +22,7 @@ public class SalesReport {
         glist.add(new Goods("PA008", "Lion Dates", "Fruits", "250-g Pack", 1, -115));
 
         Scanner scan = new Scanner(System.in);
-        Boolean flag = true;
-        while (flag) {
+        while (true) {
             System.out.println("1: List Products 2: Get Bill 3: Exit");
             int num = scan.nextInt();
             switch (num) {

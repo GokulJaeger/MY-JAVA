@@ -3,7 +3,7 @@ package com.corejava.java_lab1;
 import java.util.Scanner;
 
 public class Add2Matrixs {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		int m;
 		int n;
 		int c;

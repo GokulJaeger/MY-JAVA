@@ -19,15 +19,15 @@ public class StringPremutation {
 		showPermutation(mystr, "");
 	}
 
-	private static void showPermutation(String mystr, String NewStringToPrint) {
+	private static void showPermutation(String mystr, String newStringToPrint) {
 
-		if (NewStringToPrint.length() == mystr.length()) {
-			System.out.println(NewStringToPrint);
+		if (newStringToPrint.length() == mystr.length()) {
+			System.out.println(newStringToPrint);
 			return;
 		}
 		for (int i = 0; i < mystr.length(); i++) {
 
-			showPermutation(mystr, NewStringToPrint + mystr.charAt(i));
+			showPermutation(mystr, newStringToPrint + mystr.charAt(i));
 		}
 	}
 }

@@ -4,7 +4,7 @@ import java.io.FileDescriptor;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-public class Filereader {
+public class FileReader {
     
     static boolean valiFile(String txt) throws IOException
 	{
@@ -19,7 +19,7 @@ public class Filereader {
 	      } catch(Exception e) {
 	         e.printStackTrace();
 	      } finally {
-	         if(fis!= null){
+	         if(fis == null){
 	            fis.close();
              }   
 	      }

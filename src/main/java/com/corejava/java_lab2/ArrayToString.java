@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class ArrayToString {
     public static void main(String[] args) {
 
-        ArrayList<String> alist = new ArrayList<String>();
+        ArrayList<String> alist = new ArrayList<>();
 
         alist.add("Gokul");
         alist.add("Rikhitha");
